@@ -2,5 +2,5 @@
 
 set -e
 
-containerID=`docker ps | awk -F" "'{Print $1}'`
+containerID=$(docker ps | awk '{print $1}')
 docker rm -f $containerID
